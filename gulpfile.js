@@ -61,6 +61,12 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/css'))
 
+  // owl carousel
+  gulp.src([
+      './node_modules/owl.carousel/dist/**',
+    ])
+    .pipe(gulp.dest('./vendor/owl.carousel'))
+
 });
 
 // Compile SCSS

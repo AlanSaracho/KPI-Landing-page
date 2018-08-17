@@ -1,6 +1,28 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // owl.carousel
+  $('.owl-carousel').owlCarousel({
+    items: 4,
+    loop: false,
+    center: true,
+    margin: 10,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 4
+      }
+    }
+  });
+  
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -1,0 +1,50 @@
+/* form starting stylings ------------------------------- */
+.fl-container {
+    position: relative;
+    margin-bottom: 45px; 
+
+    input {
+        align-self: stretch;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        border: none;
+        background-color: 'transparent';
+        border-bottom: 1px solid #ffffffbb;
+        color: 'white';
+        width: 100%;
+        border-radius: 4px;
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+    input:valid {
+        background-color: rgba(255, 255, 255, 0.045);
+    }
+
+    input:focus {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.045);
+    }
+    
+    label {
+        color:#999; 
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+    
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color:#ffffff;
+    }
+
+}

@@ -284,7 +284,6 @@ section.features .feature-item i {
 
 section.cta {
   position: relative;
-  padding: 250px 0;
   background-image: url("../img/bg-cta.jpg");
   background-position: center;
   -webkit-background-size: cover;
@@ -300,7 +299,6 @@ section.cta .cta-content {
 
 section.cta .cta-content h2 {
   font-size: 50px;
-  max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
@@ -319,6 +317,40 @@ section.cta .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.cta button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  padding: 8px 16px;
+  align-self: center;
+  background-color: #ffffff16;
+}
+
+section.cta i {
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+section.cta button:hover i {
+  margin-left: 12px;
+}
+
+section.cta button:hover {
+  outline: none;
+  background-color: #ffffff22;
+}
+
+section.cta button:focus {
+  outline: none;
+  background-color: #ffffff22;
 }
 
 section.contact {
@@ -434,4 +466,63 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+section.screenshots {
+  background-color: '#000000';
+}
+
+section.screenshots .item {
+  color: '#bebebe';
+}
+
+/* form starting stylings ------------------------------- */
+.fl-container {
+  position: relative;
+  margin-bottom: 45px;
+  /* active state */
+}
+
+.fl-container input {
+  align-self: stretch;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  background-color: 'transparent';
+  border-bottom: 1px solid #ffffffbb;
+  color: 'white';
+  width: 100%;
+  border-radius: 4px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.fl-container input:valid {
+  background-color: rgba(255, 255, 255, 0.045);
+}
+
+.fl-container input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.045);
+}
+
+.fl-container label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.fl-container input:focus ~ label, .fl-container input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #ffffff;
 }

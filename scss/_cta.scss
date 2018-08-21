@@ -1,7 +1,6 @@
 // Styling for the call to action section
 section.cta {
     position: relative;
-    padding: 250px 0;
     background-image: url('../img/bg-cta.jpg');
     background-position: center;
     @include background-cover;
@@ -10,7 +9,6 @@ section.cta {
         z-index: 1;
         h2 {
             font-size: 50px;
-            max-width: 450px;
             margin-top: 0;
             margin-bottom: 25px;
             color: white;
@@ -28,5 +26,39 @@ section.cta {
         width: 100%;
         height: 100%;
         background-color: fade-out(black, .5);
+    }
+    
+    button {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        font-size: 20px;
+        border-radius: 8px;
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+        padding: 8px 16px;
+        align-self: center;
+        background-color: #ffffff16;
+    }
+
+    i {
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+
+    button:hover i {
+        margin-left: 12px;
+    }
+
+    button:hover {
+        outline: none;
+        background-color: #ffffff22;
+    }
+
+    button:focus {
+        outline: none;
+        background-color: #ffffff22;
     }
 }

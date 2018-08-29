@@ -4,7 +4,7 @@
   // owl.carousel
   $('.owl-carousel').owlCarousel({
     items: 4,
-    loop: false,
+    loop: true,
     center: true,
     margin: 10,
     URLhashListener: true,

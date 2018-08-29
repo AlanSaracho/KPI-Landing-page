@@ -1,6 +1,77 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Multilanguage
+  var translate = {
+    download: {
+      es: 'Descargar',
+      en: 'Download'
+    },
+    features: {
+      es: 'Funcionalidades',
+      en: 'Features'
+    },
+    screenshots: {
+      es: 'Imagenes',
+      en: 'Screenshots'
+    },
+    getStarted: {
+      es: 'Comenzar',
+      en: 'Get Started'
+    },
+    contact: {
+      es: 'Contacto',
+      en: 'Contact'
+    },
+    title: {
+      es: 'Deja de llamar para saber el estado de tus negocios, ahora podes tener toda la data en tu bolsillo ;)',
+      en: 'Stop calling to know the status of your business, now you can have all the data in your pocket ;)'
+    },
+    featuresTitle: {
+      es: 'Funcionalidades',
+      en: 'Features'
+    },
+    simpleUiDescription: {
+      es: 'Hacemos simple lo complicado, nada de pantallas aparatosas.',
+      en: 'We are simple, no bulky screens.'
+    }, 
+    indicatorsDescription: {
+      es: 'Visualiza todos tus indicadores configurables en tiempo real.',
+      en: 'View all your configurable indicators in real time'
+    },
+    notificationsDescription: {
+      es: 'Algo se encuentra mal? Enterate al instante!',
+      en: 'Something is wrong? Get informed instantly!'
+    },
+    mapDescription: {
+      es: 'Todavia no se que hace esto :3',
+      en: '???????????'
+    },
+    demoAccess: {
+      es: 'Accede al demo',
+      en: 'Demo access'
+    },
+    labelName: {
+      es: 'Nombre',
+      en: 'Name'
+    }
+  };
+
+  var changeLanguage = function(lang) {
+    $('.lang').each(function() {
+      var key = $(this).attr('key');
+      var text = translate[key][lang];
+      $(this).text(text);
+    });
+  }
+
+  $('.change-lang').click(function() {
+    var currentLang = $(this).attr('id');
+    changeLanguage(currentLang);
+  });
+
+  changeLanguage('es');
+
   // owl.carousel
   $('.owl-carousel').owlCarousel({
     items: 4,

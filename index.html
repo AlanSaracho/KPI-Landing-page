@@ -43,21 +43,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#masthead">Download</a>
+              <a class="nav-link js-scroll-trigger lang" href="#masthead" key="download">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger lang" href="#features" key="features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#screenshots">Screenshots</a>
+              <a class="nav-link js-scroll-trigger lang" href="#screenshots" key="screenshots">Screenshots</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#get-started">Get started</a>
+              <a class="nav-link js-scroll-trigger lang" href="#get-started" key="getStarted">Get started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger lang" href="#contact" key="contact">Contact</a>
             </li>
           </ul>
+          <a class="change-lang" id="es">ES</a>
+          <a class="change-lang" id="en">EN</a>
         </div>
       </div>
     </nav>
@@ -67,7 +69,7 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">Deja de llamar para saber el estado de tus negocios, ahora podes tener <b>toda la data</b> en tu bolsillo ;)</h1>
+              <h1 class="mb-5 lang" key="title">Deja de llamar para saber el estado de tus negocios, ahora podes tener <b>toda la data</b> en tu bolsillo ;)</h1>
                 <div class="badges">
                   <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
                   <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
@@ -96,8 +98,7 @@
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <hr>
+          <h2 class="lang" key="featuresTitle"></h2>
         </div>
         <div class="row">
           <div class="col-lg-4 my-auto">
@@ -122,14 +123,14 @@
                   <div class="feature-item">
                     <i class="icon-screen-smartphone text-primary"></i>
                     <h3>Simple UX</h3>
-                    <p class="text-muted">Hacemos simple lo complicado, nada de pantallas aparatosas.</p>
+                    <p class="text-muted lang" key="simpleUiDescription"></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-clock text-primary"></i>
                     <h3>Real-time indicators</h3>
-                    <p class="text-muted">Visualiza todos tus indicadores configurables en tiempo real.</p>
+                    <p class="text-muted lang" key="indicatorsDescription"></p>
                   </div>
                 </div>
               </div>
@@ -138,14 +139,14 @@
                   <div class="feature-item">
                     <i class="icon-bell text-primary"></i>
                     <h3>Push Notifications</h3>
-                    <p class="text-muted">Algo se encuentra mal? Enterate al instante!</p>
+                    <p class="text-muted lang" key="notificationsDescription"></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-map text-primary"></i>
                     <h3>Map</h3>
-                    <p class="text-muted">Todavia no se que hace esto :3</p>
+                    <p class="text-muted lang" key="mapDescription"></p>
                   </div>
                 </div>
               </div>
@@ -179,11 +180,11 @@
     <section class="cta" id="get-started">
       <div class="cta-content">
         <div class="container">
-          <h2>Accede al demo</h2>
+          <h2 class="lang" key="demoAccess"></h2>
           <form class="col-md-6">
               <div class="fl-container">      
                 <input type="name" required>
-                <label>Name</label>
+                <label class="lang" key="labelName">Name</label>
               </div>
               <div class="fl-container">
                   <input type="mail" required>

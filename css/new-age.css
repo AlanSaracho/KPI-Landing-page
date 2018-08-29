@@ -143,6 +143,15 @@ section h2 {
   }
 }
 
+#mainNav .change-lang {
+  color: white;
+  padding: 2px 6px;
+}
+
+#mainNav .change-lang:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 header.masthead {
   position: relative;
   width: 100%;

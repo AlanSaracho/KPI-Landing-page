@@ -4,6 +4,10 @@ section.contact {
     background-image: url('../img/bg-cta.jpg');
     background-position: center;
     @include background-cover;
+    color: white;
+    a {
+        color: white;
+    }
     .contact-content {
         position: relative;
         z-index: 1;

@@ -286,7 +286,7 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
-section.cta {
+section.contact {
   position: relative;
   background-image: url("../img/bg-cta.jpg");
   background-position: center;
@@ -296,12 +296,12 @@ section.cta {
   background-size: cover;
 }
 
-section.cta .cta-content {
+section.contact .contact-content {
   position: relative;
   z-index: 1;
 }
 
-section.cta .cta-content h2 {
+section.contact .contact-content h2 {
   font-size: 50px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -309,12 +309,12 @@ section.cta .cta-content h2 {
 }
 
 @media (min-width: 768px) {
-  section.cta .cta-content h2 {
+  section.contact .contact-content h2 {
     font-size: 80px;
   }
 }
 
-section.cta .overlay {
+section.contact .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -323,7 +323,7 @@ section.cta .overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-section.cta button {
+section.contact button {
   background-color: transparent;
   border: 0;
   color: white;
@@ -337,76 +337,24 @@ section.cta button {
   background-color: #ffffff16;
 }
 
-section.cta i {
+section.contact i {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
 
-section.cta button:hover i {
+section.contact button:hover i {
   margin-left: 12px;
 }
 
-section.cta button:hover {
+section.contact button:hover {
   outline: none;
   background-color: #ffffff22;
 }
 
-section.cta button:focus {
+section.contact button:focus {
   outline: none;
   background-color: #ffffff22;
-}
-
-section.contact {
-  text-align: center;
-  background-color: white;
-}
-
-section.contact h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-section.contact h2 i {
-  color: #dd4b39;
-}
-
-section.contact ul.list-social {
-  margin-bottom: 0;
-}
-
-section.contact ul.list-social li a {
-  font-size: 40px;
-  line-height: 80px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  color: white;
-  border-radius: 100%;
-}
-
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
 }
 
 footer {

@@ -9,14 +9,14 @@ body {
 }
 
 a {
-  color: #733640;
+  color: #b53e3e;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #50262d;
+  color: #8f3131;
 }
 
 hr {
@@ -63,7 +63,7 @@ section h2 {
   font-family: 'Quicksand';
   font-weight: 200;
   letter-spacing: 1px;
-  background-color: #733640;
+  background-color: #b53e3e;
 }
 
 #mainNav .navbar-nav > li > a {
@@ -105,7 +105,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bk_index.png") #733640;
+  background: url("../img/bk_index.png") #b53e3e;
+  background-size: cover;
 }
 
 header.masthead .header-content {
@@ -183,12 +184,32 @@ section.download h2 {
   }
 }
 
-section.features .section-heading {
-  margin-bottom: 100px;
+section.features .featureDescription {
+  align-items: center;
+  text-align: center;
+}
+
+section.features .featureDescription h3 {
+  margin-top: 32px;
+  font-weight: 10;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #578c35;
+  white-space: pre-wrap;
+}
+
+section.features .featureDescription p {
+  font-size: 16px;
+}
+
+section.features .featureDescription p b {
+  color: #578c35;
 }
 
 section.features .section-heading h2 {
   margin-top: 0;
+  color: #b53e3e;
+  white-space: pre-wrap;
 }
 
 section.features .section-heading p {
@@ -333,13 +354,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #733640;
-  background: -webkit-linear-gradient(#733640, #622e36);
-  background: linear-gradient(#733640, #622e36);
+  background: #b53e3e;
+  background: -webkit-linear-gradient(#b53e3e, #a23737);
+  background: linear-gradient(#b53e3e, #a23737);
 }
 
 .text-primary {
-  color: #733640;
+  color: #b53e3e;
 }
 
 .no-gutter > [class*='col-'] {
@@ -355,8 +376,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #733640;
-  background-color: #733640;
+  border-color: #b53e3e;
+  background-color: #b53e3e;
 }
 
 .btn {

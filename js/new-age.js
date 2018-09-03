@@ -24,8 +24,8 @@
       en: 'Contact'
     },
     title: {
-      es: 'Deja de llamar para saber el estado de tus negocios, ahora podes tener toda la data en tu bolsillo ;)',
-      en: 'Stop calling to know the status of your business, now you can have all the data in your pocket ;)'
+      es: 'Ofrece una visión estratégica de la red, su estado actual y cómo se trabajó en ella, a partir de la evaluación de indicadores claves',
+      en: 'Offers a strategic vision of the network, current status and how was developed, based on the evaluation of key indicators'
     },
     featuresTitle: {
       es: 'Funcionalidades',

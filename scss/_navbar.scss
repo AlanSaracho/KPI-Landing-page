@@ -22,7 +22,7 @@
             > a {
                 color: white !important;
                 @include alt-font;
-                border-bottom: 3px solid $theme-primary;
+                border-bottom: 3px solid transparent;
                 font-size: 13px;
                 &.active {
                     border-bottom: 3px solid $theme-secondary;
@@ -33,7 +33,7 @@
     }
     @media (min-width: 992px) {
         border-color: transparent;
-        background-color: $theme-primary;    
+        background-color: transparent;    
         .navbar-brand {
             color: fade(white, 20%);
             &:hover,

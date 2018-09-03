@@ -88,7 +88,7 @@ section h2 {
   font-family: 'Quicksand';
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 3px solid #733640;
+  border-bottom: 3px solid transparent;
   font-size: 13px;
 }
 
@@ -100,7 +100,7 @@ section h2 {
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: #733640;
+    background-color: transparent;
   }
   #mainNav .navbar-brand {
     color: fade(white, 20%);
@@ -147,9 +147,7 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #578c35;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #578c35, #dc2430);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #578c35, #dc2430);
+  background: url("../img/bk_index.png") #733640;
 }
 
 header.masthead .header-content {
@@ -184,7 +182,7 @@ header.masthead .device-container .screen img {
     text-align: left;
   }
   header.masthead .header-content h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   header.masthead .device-container {
     max-width: 325px;

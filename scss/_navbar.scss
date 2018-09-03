@@ -1,82 +1,36 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: $theme-primary;
     @include transition-all;
     @include heading-font;
-    .navbar-brand {
-        color: darken(white, 20%);
-        @include heading-font;
-        &:hover,
-        &:focus {
-            color: white
-        }
-    }
-    .navbar-toggler {
-        font-size: 12px;
-        padding: 8px 10px;
-        color: darken(white, 20%);;
-    }
+    background-color: $theme-primary;
     .navbar-nav {
         > li {
             > a {
-                font-size: 11px;
+                color: white;
                 @include alt-font;
+                border-bottom: 3px solid transparent;
+                font-size: 13px;
                 &.active {
-                    color: white !important;
-                }
-            }
-            > a,
-            > a:focus {
-                color: darken(white, 20%);;
-                &:hover {
-                    color: white;
+                    border-bottom: 3px solid $theme-secondary;
+                    border-radius: 2px;
                 }
             }
         }
     }
     @media (min-width: 992px) {
-        border-color: transparent;
         background-color: transparent;    
-        .navbar-brand {
-            color: fade(white, 20%);
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
-        .navbar-nav > li > a,
-        .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
-            &:hover {
-                color: white;
-            }
-        }
+        color: white;
         &.navbar-shrink {
-            border-color: fade-out($gray-darker, .9);
-            background-color: $theme-primary;    
-            .navbar-brand {
-                color: fade(white, 20%);
-                &:hover,
-                &:focus {
-                    color: white;
-                }
-            }
+            background-color: white;
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
-                color: fade(white, 20%);
-                &:hover {
-                    color: white;
-                }
+                color: black;
             }
         }
     }
     .change-lang {
-        color: white;
-        padding: 2px 6px;
-        &:hover {
-            background-color: rgba($color: white, $alpha: 0.1);
-        }
+        padding: 2px;
+        height: 38px;
     }
-
 }

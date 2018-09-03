@@ -63,17 +63,17 @@
 }
 
 @mixin heading-font {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Quicksand';
     font-weight: 200;
     letter-spacing: 1px;
 }
 
 @mixin body-font {
-    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Quicksand';
 }
 
 @mixin alt-font {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
+    font-family: 'Quicksand';
+    font-weight: bold;
     text-transform: uppercase;
 }

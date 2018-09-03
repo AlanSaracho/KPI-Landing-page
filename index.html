@@ -16,9 +16,7 @@
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
@@ -35,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">KPI</a>
+        <img style="height: 38px" src="./img/ic_kpi.png"/>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -55,8 +53,9 @@
               <a class="nav-link js-scroll-trigger lang" href="#contact" key="contact">Contact</a>
             </li>
           </ul>
-          <a class="change-lang" id="es">ES</a>
-          <a class="change-lang" id="en">EN</a>
+          <div style="margin-left: 16px;"/>
+          <img class="change-lang" id="es" src="./img/ic_arg.png"/>
+          <img class="change-lang" id="en" src="./img/ic_uk.png"/>
         </div>
       </div>
     </nav>
@@ -64,28 +63,17 @@
     <header class="masthead" id="masthead">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-lg-7 my-auto">
+          <div class="col-lg-6 my-auto" >
+            <img src="img/masthead.png" class="img-fluid"/>
+          </div>
+          <div class="col-lg-6 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5 lang" key="title">Deja de llamar para saber el estado de tus negocios, ahora podes tener <b>toda la data</b> en tu bolsillo ;)</h1>
+              <img src="img/ic_kpi.png"/>
+              <h1 class="mb-5 lang" key="title"></h1>
                 <div class="badges">
                   <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
                   <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
                 </div>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/screenshot-main.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -96,58 +84,30 @@
       <div class="container">
         <div class="section-heading text-center">
           <h2 class="lang" key="featuresTitle"></h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/screenshot-main2.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-lg-4 featureDescription">
+              <h3 class="lang" key="indicatorsTitle"></h3>
+              <p><b>KPI </b><n class="lang" key="indicatorsDescription"></n></p>
+            </div>
+            <div class="col-lg-4 featureDescription">
+              <h3 class="lang" key="precisionTitle"></h3>
+              <p><b>KPI </b><n class="lang" key="precisionDescription"></n></p>
+            </div>
+            <div class="col-lg-4 featureDescription">
+              <h3 class="lang" key="configurableTitle"></h3>
+              <p><b>KPI </b><n class="lang" key="configurableDescription"></n></p>
             </div>
           </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Simple UX</h3>
-                    <p class="text-muted lang" key="simpleUiDescription"></p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-clock text-primary"></i>
-                    <h3>Real-time indicators</h3>
-                    <p class="text-muted lang" key="indicatorsDescription"></p>
-                  </div>
-                </div>
+          <div class="row">
+              <div class="col-lg-4">
+                <img src="img/features1.png" class="img-fluid" alt=""/>
               </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-bell text-primary"></i>
-                    <h3>Push Notifications</h3>
-                    <p class="text-muted lang" key="notificationsDescription"></p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-map text-primary"></i>
-                    <h3>Map</h3>
-                    <p class="text-muted lang" key="mapDescription"></p>
-                  </div>
-                </div>
+              <div class="col-lg-4">
+                <img src="img/features2.png" class="img-fluid" alt=""/>
               </div>
-            </div>
+              <div class="col-lg-4">
+                <img src="img/features3.png" class="img-fluid" alt=""/>
+              </div>
           </div>
         </div>
       </div>
@@ -162,12 +122,12 @@
           </div>
           <div class="row">
               <div class="owl-carousel owl-theme">
-                  <img src="img/screenshot-config.png" class="img-fluid" alt="">
-                  <img src="img/screenshot-login.png" class="img-fluid" alt="">
-                  <img src="img/screenshot-main.png" class="img-fluid" alt="">
-                  <img src="img/screenshot-main2.png" class="img-fluid" alt="">
-                  <img src="img/screenshot-menu.png" class="img-fluid" alt="">
-                  <img src="img/screenshot-notifications.png" class="img-fluid" alt="">
+                  <img src="img/screenshot-config.png" class="img-fluid item" alt="">
+                  <img src="img/screenshot-login.png" class="img-fluid item" alt="">
+                  <img src="img/screenshot-main.png" class="img-fluid item" alt="">
+                  <img src="img/screenshot-main2.png" class="img-fluid item" alt="">
+                  <img src="img/screenshot-menu.png" class="img-fluid item" alt="">
+                  <img src="img/screenshot-notifications.png" class="img-fluid item" alt="">
               </div>
             </div>
         </div>

@@ -397,7 +397,8 @@ section.screenshots {
 }
 
 section.screenshots .item {
-  color: '#bebebe';
+  border-radius: 16px;
+  padding: 8px;
 }
 
 /* form starting stylings ------------------------------- */

@@ -20,24 +20,20 @@
     .navbar-nav {
         > li {
             > a {
-                font-size: 11px;
+                color: white !important;
                 @include alt-font;
+                border-bottom: 3px solid $theme-primary;
+                font-size: 13px;
                 &.active {
-                    color: white !important;
-                }
-            }
-            > a,
-            > a:focus {
-                color: darken(white, 20%);;
-                &:hover {
-                    color: white;
+                    border-bottom: 3px solid $theme-secondary;
+                    border-radius: 2px;
                 }
             }
         }
     }
     @media (min-width: 992px) {
         border-color: transparent;
-        background-color: transparent;    
+        background-color: $theme-primary;    
         .navbar-brand {
             color: fade(white, 20%);
             &:hover,
@@ -72,11 +68,8 @@
         }
     }
     .change-lang {
-        color: white;
-        padding: 2px 6px;
-        &:hover {
-            background-color: rgba($color: white, $alpha: 0.1);
-        }
+        padding: 2px;
+        height: 38px;
     }
 
 }
